@@ -1,0 +1,32 @@
+#hero-section
+{
+    background-image: url('../../../../public/images/books-background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 65%;
+    padding: 10px;
+    padding-bottom: 12px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .scroll-to-top-btn:hover {
+    background-color: #0056b3;
+  }
+  

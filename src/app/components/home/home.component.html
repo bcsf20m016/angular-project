@@ -1,0 +1,55 @@
+
+
+<div id="hero-section">
+    <div class="col-8 my-auto text-center">
+        <div class="my-4">
+            <h1 style="font-size: 2.8rem;">Welcome to My Online Bookstore</h1>
+        </div>
+        <div class="my-4">
+            <p style="font-size: 1.3rem; font-weight:400;">Explore our extensive collection of books across various genres. Enjoy seamless shopping
+            and discover your next great read today</p> 
+        </div>
+        <div class="my-4">
+            <a class="btn btn-warning text-white rounded-0 btn-lg" style="font-size: 1.3rem; font-weight:5old;" href="/#list-of-books">Explore Books</a>
+        </div>
+    </div>
+</div>
+
+<div class="container my-2">
+    <h1 class="text-center"><u style="text-underline-offset: 7px; text-decoration-thickness: 3px;">Featured Books</u></h1>
+    <img class="my-3" src="images\featured-books.jpg" alt="Store Books" style="height: 80vh; width: 100%;">
+    @if(books.length > 0)
+    {
+        <app-list-books [booksList]="books"></app-list-books>
+    }
+</div>
+
+<div class="container my-2">
+    <h1 class="text-center"><u style="text-underline-offset: 7px; text-decoration-thickness: 3px;">Customer Reviews</u></h1>
+    <div class="row g-2 my-4 justify-content-around">
+        <div class="col-3 py-2 border border-warning rounded rounded-3 " style="width: 400px;">
+            <p class="text-success text-center fs-5"><b>John Doe</b></p>
+            <p class="fst-italic ps-2 pe-2">"Great selection of books! I found exactly what I was looking for. The website was easy to navigate, and checkout was a breeze. My order arrived promptly."</p>
+        </div>
+        <div class="col-3 py-2 border border-warning rounded rounded-3 " style="width: 400px;">
+            <p class="text-success text-center fs-5"><b>Jane Smith</b></p>
+            <p class="fst-italic ps-2 pe-2">"Excellent customer service and fast delivery. I had a question about a book and received a quick response from their support team."</p>
+        </div>
+        <div class="col-3 py-2 border border-warning rounded rounded-3 " style="width: 400px;">
+            <p class="text-success text-center fs-5"><b>Michael Johnson</b></p>
+            <p class="fst-italic ps-2 pe-2">"Love the easy navigation and user-friendly interface. The search feature helped me quickly find the specific genres I was interested in."</p>
+        </div>
+    </div>
+    
+</div>
+
+<app-about-us></app-about-us>
+
+<div class="container my-4 py-2 shadow rounded rounded-4" style="background-color: #f9f9f9;">
+    <app-contact-us></app-contact-us>
+</div>
+
+<button class="scroll-to-top-btn" (click)="scrollToTop()">
+    <svg xmlns="http://www.w3.org/2000/svg" height="20" width="20" viewBox="0 0 384 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2 160 448c0 17.7 14.3 32 32 32s32-14.3 32-32l0-306.7L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"/></svg>
+</button>
+  
